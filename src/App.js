@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from './components/Home/Header/Header';
-import Home from './components/Home/Home/Home';
-import AddHotel from './components/Home/Pages/AddHotel/AddHotel';
-import About from './components/Home/Pages/About/About';
+import Header from './components/Header/Header';
+import About from './components/About/About';
+import AddHotel from './components/AddHotel/AddHotel';
+import Home from './components/Home/Home';
 
 function App() {
   return (
