@@ -10,32 +10,34 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar
-        bg="dark"
-        variant="dark"
-        sticky="top"
-        collapseOnSelect
-        expand="lg"
-      >
-        <Container>
-          <Navbar.Brand href="/home">Booking.com</Navbar.Brand>
+      <Navbar className="navbar" sticky="top" collapseOnSelect expand="lg">
+        <Container className="">
+          <Navbar.Brand className="fs-3 fw-bolder text-white" href="/home">
+            Booking.com
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse
             id="responsive-navbar-nav"
             className="justify-content-end"
           >
             <Nav className="me-auto">
-              <Link to="/home">home</Link>
-              <Link to="/addHotel">add your hotel</Link>
-              <Link to="/booking">booking</Link>
+              <Link className="nav-link text-white" to="/home">
+                Home
+              </Link>
+              <Link className="nav-link text-white" to="/addHotel">
+                Add your Hotel
+              </Link>
+              <Link className="nav-link text-white" to="/booking">
+                Booking
+              </Link>
             </Nav>
             <Nav>
               <span className="text-white">{user.displayName}</span>
 
               {user?.email ? (
-                <button onClick={logout}>Logout</button>
+                <button className="button" onClick={logout}>Logout</button>
               ) : (
-                <button onClick={signInUsingGoogle}>Login</button>
+                <button className="button" onClick={signInUsingGoogle}>Login</button>
               )}
             </Nav>
           </Navbar.Collapse>
