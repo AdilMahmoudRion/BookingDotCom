@@ -8,6 +8,7 @@ import AuthProvider from './context/AuthProvider';
 import Booking from './components/Booking/Booking';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import BookingHotel from './components/Booking/Booking/BookingHotel';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+            <PrivateRoute path="/bookingHotel/:bookingId">
+              <BookingHotel></BookingHotel>
+            </PrivateRoute>
           </Switch>
         </Router>
       </AuthProvider>
