@@ -6,7 +6,7 @@ import "./Header.css";
 
 const Header = () => {
     
-  const { signInUsingGoogle, user } = useAuth();
+  const { signInUsingGoogle, user,logout } = useAuth();
 
   return (
     <div>
@@ -30,9 +30,13 @@ const Header = () => {
               <Link to="/booking">booking</Link>
             </Nav>
             <Nav>
-              <NavLink>Log out</NavLink>
-              <button onClick={signInUsingGoogle}>log in</button>
-              <p className="text-danger">{user.displayName}</p>
+              <span className="text-white">{user.displayName}</span>
+
+              {user?.email ? (
+                <button onClick={logout}>Logout</button>
+              ) : (
+                <button onClick={signInUsingGoogle}>Login</button>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
