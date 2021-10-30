@@ -16,11 +16,17 @@ const Hotels = () => {
   
 
   return (
-    <div>
-      <div className="Hotels container">
-        {hotels.map((hotel) => (
-          <Hotel key={hotel._id} hotel={hotel}></Hotel>
-        ))}
+    <div className="mt-4">
+      <div className="text-center">
+        <h1>Find the perfect hotel on Booking.com</h1>
+        <p className="text-muted">From budget hotels to luxury rooms and everything in between</p>
+      </div>
+      <div>
+        <div className="Hotels container">
+          {hotels.map((hotel) => (
+            <Hotel key={hotel._id} hotel={hotel}></Hotel>
+          ))}
+        </div>
       </div>
     </div>
   );
