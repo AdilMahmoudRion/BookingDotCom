@@ -18,7 +18,7 @@ const Header = () => {
         expand="lg"
       >
         <Container>
-          <Navbar.Brand href="/home#home">Health Center</Navbar.Brand>
+          <Navbar.Brand href="/home">Booking.com</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse
             id="responsive-navbar-nav"
