@@ -8,7 +8,7 @@ const Hotel = (props) => {
           <img src={img} alt="" />
           <h5>{HotelName}</h5>
           <p>{Details}</p>
-          <button type="button" class="btn btn-primary btn-sm">
+          <button type="button" className="btn btn-primary btn-sm">
             Small button
           </button>
         </div>

@@ -1,9 +1,12 @@
 import React from "react";
 import { Container, Nav, Navbar, NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 import "./Header.css";
 
 const Header = () => {
+    
+  const { signInUsingGoogle } = useAuth();
   return (
     <div>
       <Navbar
@@ -21,13 +24,12 @@ const Header = () => {
             className="justify-content-end"
           >
             <Nav className="me-auto">
-            
-                <Link to="/home">home</Link>
-                <Link to="/addHotel">add your hotel</Link>
-             
+              <Link to="/home">home</Link>
+              <Link to="/addHotel">add your hotel</Link>
             </Nav>
             <Nav>
               <NavLink>Log out</NavLink>
+              <button onClick={signInUsingGoogle}>log in</button>
             </Nav>
           </Navbar.Collapse>
         </Container>
