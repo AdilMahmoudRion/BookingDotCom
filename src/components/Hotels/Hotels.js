@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import Hotel from "../Hotel/Hotel";
+import './Hotels.css';
 
 const Hotels = () => {
-  const [hotel, setHotel] = useState([]);
+  const [hotels, setHotel] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:5000/addHotel")
@@ -11,9 +13,17 @@ const Hotels = () => {
       });
   }, []);
 
-  console.log(hotel);
+  
 
-  return <div></div>;
+  return (
+    <div>
+      <div className="Hotels container">
+        {hotels.map((hotel) => (
+          <Hotel key={hotel._id} hotel={hotel}></Hotel>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Hotels;
