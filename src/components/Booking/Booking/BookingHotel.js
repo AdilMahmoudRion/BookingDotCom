@@ -6,7 +6,7 @@ const BookingHotel = (props) => {
   const [booking, setBooking] = useState([]);
   const { HotelName, img, Details } = booking;
   useEffect(() => {
-    fetch(`http://localhost:5000/addHotel/${bookingId}`)
+    fetch(`https://gentle-mountain-63376.herokuapp.com/addhotel/${bookingId}`)
       .then((res) => res.json())
       .then((data) => {
         setBooking(data);
