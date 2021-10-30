@@ -6,7 +6,8 @@ import "./Header.css";
 
 const Header = () => {
     
-  const { signInUsingGoogle } = useAuth();
+  const { signInUsingGoogle, user } = useAuth();
+
   return (
     <div>
       <Navbar
@@ -26,10 +27,12 @@ const Header = () => {
             <Nav className="me-auto">
               <Link to="/home">home</Link>
               <Link to="/addHotel">add your hotel</Link>
+              <Link to="/booking">booking</Link>
             </Nav>
             <Nav>
               <NavLink>Log out</NavLink>
               <button onClick={signInUsingGoogle}>log in</button>
+              <p className="text-danger">{user.displayName}</p>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -5,6 +5,9 @@ import About from './components/About/About';
 import AddHotel from './components/AddHotel/AddHotel';
 import Home from './components/Home/Home';
 import AuthProvider from './context/AuthProvider';
+import Booking from './components/Booking/Booking';
+import Login from './components/Login/Login';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -24,6 +27,12 @@ function App() {
             </Route>
             <Route path="/addHotel">
               <AddHotel></AddHotel>
+            </Route>
+            <PrivateRoute path="/booking">
+              <Booking></Booking>
+            </PrivateRoute>
+            <Route path="/login">
+              <Login></Login>
             </Route>
           </Switch>
         </Router>
