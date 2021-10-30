@@ -4,7 +4,7 @@ import Hotels from '../Hotels/Hotels';
 
 const Home = () => {
     return (
-      <div className="container">
+      <div className="">
        <Banner></Banner>
         <Hotels></Hotels>
       </div>

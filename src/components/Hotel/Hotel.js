@@ -6,7 +6,7 @@ const Hotel = (props) => {
     return (
       <div>
         <div className="Hotel ">
-          <img src={img} alt="" />
+          <img className="hotel-img" src={img} alt="" />
           <h5>{HotelName}</h5>
           <p>{Details}</p>
           <Link to={`/bookingHotel/${_id}`}>
