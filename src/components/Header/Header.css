@@ -40,3 +40,13 @@ a:hover {
   color: #003580;
    border-radius: 3px;
 }
+.img{
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.userInf{
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}

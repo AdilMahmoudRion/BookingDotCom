@@ -6,7 +6,9 @@ import "./Header.css";
 
 const Header = () => {
     
-  const { signInUsingGoogle, user,logout } = useAuth();
+  const { signInUsingGoogle, user, logout } = useAuth();
+  const imgUrl = user.photoURL;
+ 
 
   return (
     <div>
@@ -31,13 +33,20 @@ const Header = () => {
                 Booking
               </Link>
             </Nav>
-            <Nav>
-              <span className="text-white">{user.displayName}</span>
 
+            <Nav>
+              <div className="userInf">
+                <img className="img" src={imgUrl} alt="" />
+                <p className="text-white m-0">{user.displayName}</p>
+              </div>
               {user?.email ? (
-                <button className="button" onClick={logout}>Logout</button>
+                <button className="button" onClick={logout}>
+                  Logout
+                </button>
               ) : (
-                <button className="button" onClick={signInUsingGoogle}>Login</button>
+                <button className="button" onClick={signInUsingGoogle}>
+                  Login
+                </button>
               )}
             </Nav>
           </Navbar.Collapse>
