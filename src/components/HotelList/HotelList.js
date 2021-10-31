@@ -15,18 +15,21 @@ const HotelList = (props) => {
   
 
     const handleDelete = (id) => {
-      const url = `https://gentle-mountain-63376.herokuapp.com/addhotel/${id}`;
-      fetch(url, {
-        method: "DELETE",
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.deletedCount) {
-            alert("Delete Successfully");
-            const remaining = hotel.filter((hotel) => hotel._id !== id);
-            setHotel(remaining);
-          }
-        });
+      const proceed = window.confirm('are you sure you want to delete?')
+      if (proceed) {
+        const url = `https://gentle-mountain-63376.herokuapp.com/addhotel/${id}`;
+        fetch(url, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.deletedCount) {
+              alert("Delete Successfully");
+              const remaining = hotel.filter((hotel) => hotel._id !== id);
+              setHotel(remaining);
+            }
+          });
+      }
     };
 
 
