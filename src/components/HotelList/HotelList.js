@@ -8,7 +8,7 @@ const HotelList = (props) => {
   const shorten = address ? address.substring(0, 50) : "";
 
     const handleDelete = (id) => {
-      const url = `http://localhost:5000/addHotel/${id}`;
+      const url = `https://gentle-mountain-63376.herokuapp.com/addhotel/${id}`;
       fetch(url, {
         method: "DELETE",
       })
