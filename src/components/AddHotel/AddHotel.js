@@ -16,7 +16,6 @@ const AddHotel = () => {
       .then((res) => {
         if (res.data.insertedId) {
           alert("added successfully");
-          
           reset();
         }
       });
@@ -24,12 +23,16 @@ const AddHotel = () => {
 
   return (
     <div className="container hotel-section mt-5">
+      {/* ------------Hotel List--------------- */}
       <div className="w-50 hotel-list">
         <h1 className="text-center">List Off Hotel</h1>
         <div>
           <HotelList></HotelList>
         </div>
       </div>
+
+
+      {/* ------------------added Hotel--------- */}
       <div className="w-50 hotel-added">
         <h1 className="text-center">Please Add a Service</h1>
         <form className="form" onSubmit={handleSubmit(onSubmit)}>

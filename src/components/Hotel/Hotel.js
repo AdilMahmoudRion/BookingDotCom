@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Hotel.css";
 const Hotel = (props) => {
-  const { HotelName, Details, img, _id, rate, address, rating } = props.hotel;
+  const { HotelName, img, _id, rate, address, rating } = props.hotel;
   const shorten = address ? address.substring(0, 70) : "";
  
 

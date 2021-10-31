@@ -5,6 +5,9 @@ import img from "../../Images/img.jpg";
 const Banner = () => {
   return (
     <div className="banner-body">
+
+      {/* -------------banner------------ */}
+      
       <div className="banner container">
         <div className="banner-details">
           <div className="p-3">

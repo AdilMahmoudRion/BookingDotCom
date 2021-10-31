@@ -18,6 +18,7 @@ const BookingHotel = (props) => {
   }, []);
 
   return (
+//  -----------------Hotel Details information-----------
     <div className="container mt-5 container-box">
       <div className="booking-hotel">
         <div className="img-section ">

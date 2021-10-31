@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./HotelList.css";
 const HotelList = (props) => {
+
+  // -------------Hotel update and delete section----------
     
   const [hotel, setHotel] = useState([]);
   useEffect(() => {
@@ -11,6 +13,8 @@ const HotelList = (props) => {
       .then((data) => setHotel(data));
   }, []);
  
+
+
     
   
 
