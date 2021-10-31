@@ -5,7 +5,7 @@ const Login = () => {
   const { signInUsingGoogle } = useAuth();
   return (
     <div className="body">
-      <div class="form-container">
+      <div className="form-container">
         <form id="contact" action="" method="post">
           <h3>Login Form</h3>
          

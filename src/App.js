@@ -9,7 +9,7 @@ import Booking from './components/Booking/Booking';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import BookingHotel from './components/Booking/Booking/BookingHotel';
-import Footer from './components/Footer/Footer';
+import UpdateHotel from './components/UpdateHotel/UpdateHotel';
 
 function App() {
   return (
@@ -36,12 +36,14 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+            <Route path="/updateHotel">
+              <UpdateHotel></UpdateHotel>
+            </Route>
             <PrivateRoute path="/bookingHotel/:bookingId">
               <BookingHotel></BookingHotel>
             </PrivateRoute>
           </Switch>
         </Router>
-        <Footer></Footer>
       </AuthProvider>
     </div>
   );

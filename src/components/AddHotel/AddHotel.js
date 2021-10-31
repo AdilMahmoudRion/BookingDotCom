@@ -1,5 +1,4 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import HotelList from "../HotelList/HotelList";
 import "./AddHotel.css";
@@ -10,7 +9,7 @@ const AddHotel = () => {
     formState: { errors },
     reset,
   } = useForm();
-  const [hotel, setHotel] = useState([]);
+
 
   const onSubmit = (data) => {
     axios
@@ -24,12 +23,7 @@ const AddHotel = () => {
   
   };
 
- useEffect(() => {
-   const url = "https://gentle-mountain-63376.herokuapp.com/addhotel";
-   fetch(url)
-     .then((res) => res.json())
-     .then((data) => setHotel(data));
- }, []);
+ 
   
 
 
@@ -38,13 +32,9 @@ const AddHotel = () => {
       <div className="w-50 hotel-list">
         <h1 className="text-center">List Off Hotel</h1>
         <div>
-          {hotel.map((hotel) => (
-            <HotelList
-              key={hotel._id}
-              hotel={hotel}
-    
-            ></HotelList>
-          ))}
+          
+            <HotelList></HotelList>
+          
         </div>
       </div>
       <div className="w-50 hotel-added">

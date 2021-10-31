@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import './BookingHotel.css'
+import "./BookingHotel.css";
 
 const BookingHotel = (props) => {
   const { bookingId } = useParams();
   const [booking, setBooking] = useState([]);
   const { HotelName, img, Details, address, rate, rating } = booking;
-  console.log(booking);
+
   useEffect(() => {
     fetch(`https://gentle-mountain-63376.herokuapp.com/addhotel/${bookingId}`)
       .then((res) => res.json())
