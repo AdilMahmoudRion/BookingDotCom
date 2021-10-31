@@ -15,7 +15,7 @@ const HotelList = (props) => {
         .then((res) => res.json())
         .then((data) => {
           if (data.deletedCount) {
-            alert("Delete");
+            alert("Delete Successfully");
             // const remaining = hotles.filter((hotel) => hotel._id !== id);
             // sethotles(remaining);
           }
