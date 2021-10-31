@@ -18,8 +18,12 @@ const HotelList = (props) => {
             </div>
           </div>
           <div className="button-grp">
-            <button>Update</button>
-            <button>Delete</button>
+            <Link className="up-btn up-btn1" to="./home">
+              Update
+            </Link>
+            <Link className="up-btn2 up-btn" to="./home">
+             Remove
+            </Link>
           </div>
         </div>
       </div>
