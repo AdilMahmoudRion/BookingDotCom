@@ -1,7 +1,7 @@
-.container-box {
-  width: 70%;
+.service {
+  display: flex;
 }
-.booking-hotel {
+.service div {
   margin: 20px;
   background: rgb(248, 248, 250);
   border-radius: 5px;
@@ -11,12 +11,9 @@
     0 2px 4px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07);
   padding: 10px;
 }
-.img-section {
-  padding: 10px;
-}
-.img-section img {
-  width: 100%;
-}
-.details-section {
-  padding: 10px;
+
+.service-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
 }
