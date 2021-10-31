@@ -11,6 +11,7 @@ const Home = () => {
         <Hotels></Hotels>
         <OurService></OurService>
         <Login></Login>
+    
       </div>
     );
 };

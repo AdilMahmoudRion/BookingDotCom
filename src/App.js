@@ -9,6 +9,7 @@ import Booking from './components/Booking/Booking';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import BookingHotel from './components/Booking/Booking/BookingHotel';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             </PrivateRoute>
           </Switch>
         </Router>
+        <Footer></Footer>
       </AuthProvider>
     </div>
   );

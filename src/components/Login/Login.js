@@ -8,7 +8,7 @@ const Login = () => {
       <div class="form-container">
         <form id="contact" action="" method="post">
           <h3>Login Form</h3>
-          <h4>Login now then booking you site</h4>
+         
           <fieldset>
             <input
               placeholder="Your name"
