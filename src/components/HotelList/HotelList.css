@@ -1,13 +1,11 @@
 .hotel {
   display: flex;
-margin-bottom: 5px;
+  margin-bottom: 5px;
   border: 1px solid gray;
   padding: 10px;
 }
 .hotel-details {
-
   display: flex;
-
 }
 .hotels-img {
   width: 100px;
@@ -18,30 +16,29 @@ margin-bottom: 5px;
   width: 20%;
 }
 .detail-sec {
-    display: flex;
+  display: flex;
   width: 80%;
   align-items: center;
-  
-  justify-content: space-between;
 
+  justify-content: space-between;
 }
-.button-grp{
-    display: flex;
-    flex-direction: column;
+.button-grp {
+  display: flex;
+  flex-direction: column;
 }
-.up-btn{
-    text-align: center;
-    border-radius: 3px;
-    width: 120px;
+.up-btn {
+  text-align: center;
+  border-radius: 3px;
+  width: 120px;
   padding: 3px;
 }
-.up-btn1{
-    margin-bottom: 5px;
-  
-    background-color: #a435f0;
+.up-btn1 {
+  margin-bottom: 5px;
+
+  background-color: #a435f0;
 }
-.up-btn2{
-
-
-    background-color: #dddb36;
+.up-btn2 {
+  background-color: #dddb36;
+  border: none;
+  color: white;
 }

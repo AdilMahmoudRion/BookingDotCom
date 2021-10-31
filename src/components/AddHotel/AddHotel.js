@@ -12,7 +12,6 @@ const AddHotel = () => {
   } = useForm();
   const [hotel, setHotel] = useState([]);
 
-
   const onSubmit = (data) => {
     axios
       .post("https://gentle-mountain-63376.herokuapp.com/addhotel", data)
@@ -31,7 +30,8 @@ const AddHotel = () => {
      .then((res) => res.json())
      .then((data) => setHotel(data));
  }, []);
-console.log(hotel);
+  
+
 
   return (
     <div className="container hotel-section mt-5">
@@ -39,7 +39,11 @@ console.log(hotel);
         <h1 className="text-center">List Off Hotel</h1>
         <div>
           {hotel.map((hotel) => (
-            <HotelList key={hotel._id} hotel={hotel}></HotelList>
+            <HotelList
+              key={hotel._id}
+              hotel={hotel}
+    
+            ></HotelList>
           ))}
         </div>
       </div>
@@ -53,7 +57,7 @@ console.log(hotel);
           {errors.HotelName && <p>Hotel name is required.</p>}
           <input
             placeholder="Hotel Retting"
-            {...register("rating", { min: 1, max: 10 }, { required: true })}
+            {...register("rating", { min: 2, max: 10 }, { required: true })}
           />
           {errors.rating && (
             <p className="text-muted">Rating required Out of 10.</p>
