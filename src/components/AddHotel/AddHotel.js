@@ -10,31 +10,24 @@ const AddHotel = () => {
     reset,
   } = useForm();
 
-
   const onSubmit = (data) => {
     axios
       .post("https://gentle-mountain-63376.herokuapp.com/addhotel", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("added successfully");
+          
           reset();
         }
       });
-  
   };
-
- 
-  
-
 
   return (
     <div className="container hotel-section mt-5">
       <div className="w-50 hotel-list">
         <h1 className="text-center">List Off Hotel</h1>
         <div>
-          
-            <HotelList></HotelList>
-          
+          <HotelList></HotelList>
         </div>
       </div>
       <div className="w-50 hotel-added">

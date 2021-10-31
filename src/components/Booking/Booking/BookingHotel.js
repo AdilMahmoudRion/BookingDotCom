@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 import "./BookingHotel.css";
+import "../../Hotel/Hotel.css"
 
 const BookingHotel = (props) => {
   const { bookingId } = useParams();
@@ -29,6 +31,12 @@ const BookingHotel = (props) => {
             From: <strong>{rate}</strong>
           </h1>
           <p>{Details}</p>
+        </div>
+        <div>
+          <Link to="/home" className="p-1 text-center booking-button btn1 w-50">Home</Link>
+          <Link to="/booking" className="text-center p-1 booking-button btn2 w-50">
+            Booking now
+          </Link>
         </div>
       </div>
     </div>

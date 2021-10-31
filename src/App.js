@@ -36,7 +36,7 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/updateHotel/">
+            <Route path="/updateHotel/addHotel/:id">
               <UpdateHotel></UpdateHotel>
             </Route>
             <PrivateRoute path="/bookingHotel/:bookingId">

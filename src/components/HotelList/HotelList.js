@@ -36,8 +36,7 @@ const HotelList = (props) => {
   return (
     <div>
       {hotel.map((hotel) => (
-        <div className="hotel"
-        key={hotel._id}>
+        <div className="hotel" key={hotel._id}>
           <div className="img-sec">
             <img className="hotels-img" src={hotel.img} alt="" />
           </div>
@@ -49,7 +48,7 @@ const HotelList = (props) => {
               </div>
             </div>
             <div className="button-grp">
-              <Link className="up-btn up-btn1" to="./updateHotel">
+              <Link className="up-btn up-btn1" to={`/updateHotel/addHotel/${hotel._id}`}>
                 Update
               </Link>
               <button
