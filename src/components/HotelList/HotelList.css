@@ -1,0 +1,31 @@
+.hotel {
+  display: flex;
+margin-bottom: 5px;
+  border: 1px solid gray;
+  padding: 10px;
+}
+.hotel-details {
+
+  display: flex;
+
+}
+.hotels-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.img-sec {
+  width: 20%;
+}
+.detail-sec {
+    display: flex;
+  width: 80%;
+  align-items: center;
+  
+  justify-content: space-between;
+
+}
+.button-grp{
+    display: flex;
+    flex-direction: column;
+}
