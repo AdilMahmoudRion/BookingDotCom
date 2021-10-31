@@ -85,6 +85,6 @@ border: 1px solid #003580;
 }
 .signInUsingGoogle:hover{
     color: white;
-    background-color: #044094;
+    background-color: #DB4437;
     transition: background-color 0.7s ease-in-out;
 }
