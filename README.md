@@ -1,9 +1,11 @@
 # Find your next stay
+
 Search deals on hotels, homes, and much more...
 
-Live site link: [Bookink.com](https://booking-dotcom.web.app/home).
+Live site link: [Bike point](https://bike-point-7dc02.web.app/).
 
 ## Plan Your Trip
+
 With Booking.com
 
 You're eligible for a Genius discount at Radisson Blu Royal Garden Hotel, Trondheim! To save at this property, all you have to do is sign in.
@@ -21,6 +23,7 @@ Couples in particular like the location – they rated it 9.1 for a two-person t
 We speak your language!
 
 ## One Of The Best booking service On The Market
+
 Peacefully located in central Trondheim, City Living Schøller Hotel provides rooms and apartments right across the street from Stiftsgården royal residence. It offers free tea/coffee and rooms with cable TV and free WiFi.
 
 The spacious rooms and apartments at Schøller Hotel feature wooden floors and modern furnishings. Each room has a refrigerator. Apartments include a kitchenette.
@@ -33,12 +36,12 @@ Couples in particular like the location – they rated it 9.4 for a two-person t
 
 We speak your language!
 
-
 ## Our top picks
-* Radisson Blu Royal Garden Hotel, Trondheim
-* P-Hotels BrattøraOpens in new window
-* Scandic LerkendalOpens in new window
-* Best Western Plus Hotel BakerietOpens in new window
-* Thon Hotel TrondheimOpens in new window
-* Chesterfield HotelOpens in new window
-* Chesterfield HotelOpens in new window
+
+- Radisson Blu Royal Garden Hotel, Trondheim
+- P-Hotels BrattøraOpens in new window
+- Scandic LerkendalOpens in new window
+- Best Western Plus Hotel BakerietOpens in new window
+- Thon Hotel TrondheimOpens in new window
+- Chesterfield HotelOpens in new window
+- Chesterfield HotelOpens in new window
