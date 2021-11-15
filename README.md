@@ -4,9 +4,9 @@ Search deals on hotels, homes, and much more...
 
 Live site link: [Bike point](https://bike-point-7dc02.web.app/).
 
-## Plan Your Trip
+## chose your bike
 
-With Booking.com
+With bike point
 
 You're eligible for a Genius discount at Radisson Blu Royal Garden Hotel, Trondheim! To save at this property, all you have to do is sign in.
 
@@ -22,7 +22,7 @@ Couples in particular like the location – they rated it 9.1 for a two-person t
 
 We speak your language!
 
-## One Of The Best booking service On The Market
+## One Of The Best sale service On The Market
 
 Peacefully located in central Trondheim, City Living Schøller Hotel provides rooms and apartments right across the street from Stiftsgården royal residence. It offers free tea/coffee and rooms with cable TV and free WiFi.
 
