@@ -1,0 +1,47 @@
+.Ex-bangladesh-section {
+  padding: 20px 25px;
+}
+.e-ba-section {
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.ex-bangladesh-header > p {
+  margin-bottom: 0;
+}
+.place-div {
+  width: 350px;
+  height: 425px;
+  margin: 10px;
+}
+.place-img {
+  width: 350px;
+  height: 350px;
+}
+
+.place-title > p {
+  margin-bottom: 0;
+}
+.place-title > h2 {
+  font-size: 28px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.e-ba-section::-webkit-scrollbar {
+  height: 20px;
+}
+.e-ba-section::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.e-ba-section::-webkit-scrollbar-thumb {
+  background: #003580;
+  border-radius: 10px;
+}
+.e-ba-section::-webkit-scrollbar-thumb:hover {
+  background: #044094;
+}
+.ex-bangladesh-header {
+  padding: 10px;
+}
